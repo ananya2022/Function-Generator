@@ -20,9 +20,9 @@
   * [Acknowledgement](#acknowledgement)
   * [References](#references)
 ## Abstract
-Function generators have versatile applications in electronics.  In this work, a function generator has been constructed by cascading three well known circuits – The Wien Bridge Oscillator, Schmitt trigger, Integrator. The Wien Bridge Oscillator has been constructed using JFET and Op Amp; Schmitt trigger using CMOS transistors; Integrator using the RC circuitry. The Wien Bridge Oscillator produces a sine wave that acts as an input to the Schmitt trigger circuit which in turn converts it to a square wave. The square wave is further converted to a triangle wave by the integrator. 
+Function generators have versatile applications in electronics.  In this work, a function generator has been constructed by cascading three well known circuits – The Wien Bridge Oscillator, Schmitt trigger, Integrator. The Wien Bridge Oscillator has been constructed using JFET and Op Amp; Schmitt trigger using CMOS transistors; Integrator using the RC circuitry. The Wien Bridge Oscillator produces a sine wave that acts as an input to the Schmitt trigger circuit which in turn converts it to a square wave. The square wave is further converted to a triangle wave by the integrator. Modified circuits gave good results.
 ## Reference Circuits
-This waveform generator is a combination of the three standard circuits - Wien Bridge Oscillator, Schmitt Trigger and Integrator.
+This waveform generator is a combination of the three standard circuits - Wien Bridge Oscillator, Schmitt Trigger and Integrator. The most commonly found, standard electronic circuits were designed differently keeping in mind the efficiency of functioning and advantages to produce a new circuit with versatile applications. The Wien Bridge Oscillator was initially conructed using two JFETs. The Schmitt trigger circuit was constructed using CMOS transistors and an Op Amp RC integrator was used. A lot of descrepancies in the parameters and subsequent waveforms were seen. Owing to this, a new design was adapted using Op Amp and FET (Wien Bridge) and RC Integrator. NMOS and PMOS transistors of 0.180um length, widths of (0.36um and 0.9um respectively) were used. 
 ### Wien Bridge Oscillator
 ![image](https://user-images.githubusercontent.com/101338084/157718284-0046d794-8982-453b-a0b8-e451a744de75.png)
 ### Schmitt trigger 
@@ -73,10 +73,3 @@ Ananya N, I M.Sc. Physics (Materials Science), ICT Mumbai
 * Eevblog.Com. Retrieved March 10, 2022, from https://www.eevblog.com/forum/projects/wien-bridge-oscillator-ltspice-simulation
 * Malvino, A. P., & Bates, D. J. (2015). Electronic Principles (8th ed.). McGraw-Hill Education.
 * Wein bridge oscillator using JFET. Blogspot.Com. Retrieved March 10, 2022, from http://techpicz.blogspot.com/2012/07/wein-bridge-oscillator-using-jfet.html
-
-
-
-
-
-
-
