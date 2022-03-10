@@ -1,0 +1,36 @@
+* D:\Softwares\eSimfolder\esimworkspace\10thmarch1\10thmarch1.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 03/10/22 11:48:29
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+M1  Vout2_Schmitt_ Vout_Wien_ Net-_M1-Pad3_ GND mosfet_n		
+M2  Net-_M1-Pad3_ Vout_Wien_ GND GND mosfet_n		
+M6  Net-_M3-Pad1_ Vout2_Schmitt_ Net-_M1-Pad3_ GND mosfet_n		
+M4  Net-_M3-Pad3_ Vout_Wien_ Vout2_Schmitt_ Net-_M3-Pad1_ mosfet_p		
+M3  Net-_M3-Pad1_ Vout_Wien_ Net-_M3-Pad3_ Net-_M3-Pad1_ mosfet_p		
+M5  Net-_M3-Pad3_ Vout2_Schmitt_ GND Net-_M3-Pad1_ mosfet_p		
+U2  Vout2_Schmitt_ plot_v1		
+v3  Net-_M3-Pad1_ GND 5		
+J1  Net-_J1-Pad1_ Net-_C1-Pad1_ GND jfet_n		
+X1  ? Net-_R1-Pad2_ Net-_C2-Pad1_ Net-_X1-Pad4_ ? Vout_Wien_ Net-_X1-Pad7_ ? lm_741		
+v1  Net-_X1-Pad7_ GND DC		
+v2  GND Net-_X1-Pad4_ DC		
+R1  GND Net-_R1-Pad2_ 1k		
+R3  Net-_R1-Pad2_ Net-_J1-Pad1_ 4k		
+R6  Net-_R1-Pad2_ Vout_Wien_ 2k		
+R5  Net-_C2-Pad1_ Net-_C3-Pad2_ 80k		
+R2  Net-_C1-Pad1_ GND 470k		
+R4  Net-_C2-Pad1_ GND 80k		
+C1  Net-_C1-Pad1_ GND 1u		
+C2  Net-_C2-Pad1_ GND 10n		
+C3  Vout_Wien_ Net-_C3-Pad2_ 10n		
+U1  Vout_Wien_ plot_v1		
+D1  Net-_C1-Pad1_ Vout_Wien_ eSim_Diode		
+U3  Vout3_Int_ plot_v1		
+C4  Vout3_Int_ GND 1u		
+R7  Vout2_Schmitt_ Vout3_Int_ 45k		
+
+.end
