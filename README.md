@@ -20,7 +20,7 @@
   * [Acknowledgement](#acknowledgement)
   * [References](#references)
 ## Abstract
-Abstract
+Function generators have versatile applications in electronics.  In this work, a function generator has been constructed by cascading three well known circuits – The Wien Bridge Oscillator, Schmitt trigger, Integrator. The Wien Bridge Oscillator has been constructed using JFET and Op Amp; Schmitt trigger using CMOS transistors; Integrator using the RC circuitry. The Wien Bridge Oscillator produces a sine wave that acts as an input to the Schmitt trigger circuit which in turn converts it to a square wave. The square wave is further converted to a triangle wave by the integrator. 
 ## Reference Circuits
 This waveform generator is a combination of the three standard circuits - Wien Bridge Oscillator, Schmitt Trigger and Integrator.
 ### Wien Bridge Oscillator
@@ -30,7 +30,7 @@ This waveform generator is a combination of the three standard circuits - Wien B
 ### Integrator
 ![image](https://user-images.githubusercontent.com/101338084/157718401-6aee6c64-da96-48ee-ae51-90c6773f8605.png)
 ## Methodology
-* Design the generated circuit using eSim
+* Design the circuit using eSim
 * Convert KiCAD to ngSpice
 * Simulate
 * Perform analysis and trace waveforms
@@ -43,6 +43,7 @@ https://esim.fossee.in/home
 It is an Open Source Software for Spice Simulations. For more details refer:
 http://ngspice.sourceforge.net/docs.html
 ## Circuit details
+The Wien Bridge Oscillator has been constructed using
 ## Implemented Circuit
 ![image](https://user-images.githubusercontent.com/101338084/157712766-28fb1a7d-98f5-45a5-824f-76bd18d1f086.png)
 ## Implemented Waveforms (Observed Outputs)
@@ -58,6 +59,7 @@ The following are the output waveforms of the implemented circuits.
 # Netlist
 ![image](https://user-images.githubusercontent.com/101338084/157713745-cbdc6976-92de-4ee4-9020-f190366e2e42.png)
 # Inference
+Function generators are standard circuits in the electronics discipline used to produce different kinds of waveforms (usually sine, square, triangle waves). In an attempt to design a waveform generator, three standard circuits have been employed. Unlike these circuits that function based only on Op Amps, two of them have been designed separately using different components. Wien bridge oscillator has been constructed using an additional JFET and the Schmitt trigger circuit has been constructed using CMOS (PMOS and NMOS) transistors. RC integrator was used to convert square wave into a triangle wave. Each circuit involves separate circuit analysis and formulae to analyze the working.  The circuitry and design have been referred from various sources and were cascaded to get a desired output for suitable applications. However, the circuit design proposed in the literature review did not give the expected results and suitable modifications have been carried out. This could be attributed to the internal parameters and time scale variation in subsequent circuits while simulating. Changes in the wave parameters were seen after cascading. However, the modified design produced better results. 
 ## Author
 Ananya N, I M.Sc. Physics (Materials Science), ICT Mumbai 
 ## Acknowledgement
@@ -67,8 +69,8 @@ Ananya N, I M.Sc. Physics (Materials Science), ICT Mumbai
 ## References
 * Dokic, B. L. (1984, October). CMOS Schmitt triggers. In IEE Proceedings G-Electronic Circuits and Systems (Vol. 131, No. 5, pp. 197-202). IET.
 * Filanovsky, I. M., & Baltes, H. (1994). CMOS Schmitt trigger design. IEEE Transactions on Circuits and Systems I: Fundamental Theory and Applications, 41(1), 46-49.
-* Integrators. (n.d.). Learnabout-Electronics.Org. Retrieved March 10, 2022, from https://learnabout-electronics.org/ac_theory/filters85.php
-* (N.d.). Eevblog.Com. Retrieved March 10, 2022, from https://www.eevblog.com/forum/projects/wien-bridge-oscillator-ltspice-simulation
+* Integrators. Learnabout-Electronics.Org. Retrieved March 10, 2022, from https://learnabout-electronics.org/ac_theory/filters85.php
+* Eevblog.Com. Retrieved March 10, 2022, from https://www.eevblog.com/forum/projects/wien-bridge-oscillator-ltspice-simulation
 * Malvino, A. P., & Bates, D. J. (2015). Electronic Principles (8th ed.). McGraw-Hill Education.
 * Wein bridge oscillator using JFET. Blogspot.Com. Retrieved March 10, 2022, from http://techpicz.blogspot.com/2012/07/wein-bridge-oscillator-using-jfet.html
 
